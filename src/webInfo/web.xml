@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>	
+	<servlet>
+		<servlet-name>login</servlet-name>
+		<servlet-class>servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet>	
+		<servlet-name>register</servlet-name>
+		<servlet-class>servlet.RegisterServlet</servlet-class>
+	</servlet>
+	<mapping>
+		<url-patten>/login</url-patten>
+		<url-patten>/log</url-patten>
+		<servlet-name>login</servlet-name>
+	</mapping>
+	<mapping>
+		<url-patten>/reg</url-patten>
+		<url-patten>/register</url-patten>
+		<servlet-name>register</servlet-name>
+	</mapping>
+</web-app>
